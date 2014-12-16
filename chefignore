@@ -30,6 +30,7 @@ tmtags
 .project
 .settings
 mkmf.log
+.idea
 
 ## COMPILED ##
 ##############
@@ -53,6 +54,11 @@ test/*
 features/*
 Guardfile
 Procfile
+
+# Test-Kitchen #
+################
+.kitchen.yml
+.kitchen/*
 
 # SCM #
 #######
@@ -94,3 +100,7 @@ Vagrantfile
 # Travis #
 ##########
 .travis.yml
+
+# Rubocop #
+###########
+.rubocop.yml
