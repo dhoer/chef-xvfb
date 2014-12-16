@@ -1,5 +1,9 @@
 Xvfb Changelog
 
-# 1.0.0
+# 0.1.0
 
-- Add Xvfb as a service
+- Add support for Ubuntu, RedHat, CentOS, and Fedora
+
+# 0.0.1
+
+- Initial release for Debian
