@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/dhoer/chef-xvfb.svg)](https://travis-ci.org/dhoer/chef-xvfb)
 
-This cookbook installs Xvfb and configures it as a service.
+This cookbook installs Xvfb and configures it as a service. Xvfb is an X server that can run on machines with no
+display hardware and no physical input devices.  It emulates a dumb framebuffer using virtual memory.
 
 ## Requirements
 
@@ -23,6 +24,16 @@ These cookbooks are referenced with suggests, so be sure to depend on the cookbo
 ## Usage
 
 Just include `recipe[xvfb]` in your run_list.
+
+## Attributes
+
+- `node['xvfb']['display']` - Display number to listen for connections. Default is `:0`.
+- `node['xvfb']['screennum']` - Screen number. Default is `0`.
+- `node['xvfb']['dimensions']` - Screen width, height, and depth.  Default is `1280x1024x24`.
+- `node['xvfb']['args']` - Additional arguments.  Default is `-ac` (disable access control restrictions).
+
+See [attributes/default.rb](https://github.com/dhoer/chef-xvfb/blob/master/attributes/default.rb) for complete list
+of attributes.
 
 ## Getting Help
 

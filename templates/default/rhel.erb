@@ -6,7 +6,7 @@
 . /etc/rc.d/init.d/functions
 
 exec="/usr/bin/Xvfb"
-args="<%= @display %> -screen <%= @screen_number %> <%= @screen_resolution %> <%= @option %>"
+args="<%= @display %> -screen <%= @screennum %> <%= @dimensions %> <%= @args %>"
 prog="Xvfb"
 
 [ -e /etc/sysconfig/$prog ] && . /etc/sysconfig/$prog

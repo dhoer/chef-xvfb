@@ -14,8 +14,8 @@ describe 'xvfb::default' do
           mode: '0755',
           variables: {
             display: ':0',
-            screen_number: '0',
-            screen_resolution: '1280x1024x24',
+            screennum: '0',
+            dimensions: '1280x1024x24',
             args: '-ac'
           }
         )
@@ -39,8 +39,8 @@ describe 'xvfb::default' do
           mode: '0755',
           variables: {
             display: ':0',
-            screen_number: '0',
-            screen_resolution: '1280x1024x24',
+            screennum: '0',
+            dimensions: '1280x1024x24',
             args: '-ac'
           }
         )
