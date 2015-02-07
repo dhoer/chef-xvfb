@@ -10,15 +10,15 @@ describe 'xvfb::default' do
 
     it 'installs init.d' do
       expect(chef_run).to create_template('/etc/init.d/xvfb').with(
-          source: 'rhel.erb',
-          mode: '0755',
-          variables: {
-            display: ':0',
-            screennum: '0',
-            dimensions: '1280x1024x24',
-            args: '-ac'
-          }
-        )
+        source: 'rhel.erb',
+        mode: '0755',
+        variables: {
+          display: ':0',
+          screennum: '0',
+          dimensions: '1280x1024x24',
+          args: '-ac'
+        }
+      )
     end
 
     it 'starts xvfb service' do
@@ -35,15 +35,15 @@ describe 'xvfb::default' do
 
     it 'installs init.d' do
       expect(chef_run).to create_template('/etc/init.d/xvfb').with(
-          source: 'debian.erb',
-          mode: '0755',
-          variables: {
-            display: ':0',
-            screennum: '0',
-            dimensions: '1280x1024x24',
-            args: '-ac'
-          }
-        )
+        source: 'debian.erb',
+        mode: '0755',
+        variables: {
+          display: ':0',
+          screennum: '0',
+          dimensions: '1280x1024x24',
+          args: '-ac'
+        }
+      )
     end
 
     it 'starts xvfb service' do
