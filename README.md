@@ -2,9 +2,11 @@
 
 [![Cookbook Version](http://img.shields.io/cookbook/v/xvfb.svg?style=flat-square)][cookbook]
 [![Build Status](http://img.shields.io/travis/dhoer/chef-xvfb.svg?style=flat-square)][travis]
+[![GitHub Issues](http://img.shields.io/github/issues/dhoer/chef-xvfb.svg?style=flat-square)][github]
 
 [cookbook]: https://supermarket.chef.io/cookbooks/xvfb
 [travis]: https://travis-ci.org/dhoer/chef-xvfb
+[github]: https://github.com/dhoer/chef-xvfb/issues
 
 This cookbook installs Xvfb and configures it as a service. Xvfb is an X server that can run on machines with no
 display hardware and no physical input devices.  It emulates a dumb framebuffer using virtual memory.
