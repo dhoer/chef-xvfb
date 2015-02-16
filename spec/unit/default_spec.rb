@@ -16,7 +16,7 @@ describe 'xvfb::default' do
           display: ':0',
           screennum: '0',
           dimensions: '1280x1024x24',
-          args: '-ac'
+          args: nil
         }
       )
     end
@@ -41,7 +41,7 @@ describe 'xvfb::default' do
           display: ':0',
           screennum: '0',
           dimensions: '1280x1024x24',
-          args: '-ac'
+          args: nil
         }
       )
     end
