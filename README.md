@@ -36,7 +36,8 @@ Just include `recipe[xvfb]` in your run_list.
 - `node['xvfb']['display']` - Display number to listen for connections. Default is `:0`.
 - `node['xvfb']['screennum']` - Screen number. Default is `0`.
 - `node['xvfb']['dimensions']` - Screen width, height, and depth.  Default is `1280x1024x24`.
-- `node['xvfb']['args']` - Additional arguments.  Default is `-ac` (disable access control restrictions).
+- `node['xvfb']['args']` - Additional arguments.  Default is `nil`.  Set to `-ac`  to disable access control
+restrictions.
 
 See [attributes/default.rb](https://github.com/dhoer/chef-xvfb/blob/master/attributes/default.rb) for complete list
 of attributes.

@@ -1,7 +1,7 @@
 default['xvfb']['display'] = ':0'
 default['xvfb']['screennum']  = '0'
 default['xvfb']['dimensions'] = '1280x1024x24'
-default['xvfb']['args'] = '-ac'
+default['xvfb']['args'] = nil
 
 default['xvfb']['packages']['debian'] =
   %w(xfonts-100dpi xfonts-75dpi xfonts-scalable xserver-xorg-core xvfb)
