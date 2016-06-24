@@ -1,18 +1,14 @@
 # Xvfb Changelog
 
-## 2.0.0
+## 2.1.0 2016-06-23
+
+- Add support for systemd
+
+## 2.0.0 2015-02-16
 
 - Address security vulnerability [CVE-1999-0526](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-1999-0526) by
 changing `args` default from `-ac` (disable access control restrictions) to `nil`
 
-## 1.0.0
+## 1.0.0 2014-12-16
 
 - Refactor attributes names and document them in readme
-
-## 0.1.0
-
-- Add support for Ubuntu, RedHat, CentOS, and Fedora
-
-## 0.0.1
-
-- Initial release for Debian
