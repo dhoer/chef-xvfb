@@ -12,7 +12,7 @@ end
 
 template path do
   source src
-  mode '0644'
+  mode '0755'
   variables(
     display: node['xvfb']['display'],
     screennum: node['xvfb']['screennum'],

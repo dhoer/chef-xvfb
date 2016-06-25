@@ -41,7 +41,7 @@ describe 'xvfb::default' do
     end
 
     it 'installs upstart' do
-      expect(chef_run).to create_template('/etc/init.d/xvfb').with(
+      expect(chef_run).to create_template('/etc/init/xvfb.conf').with(
         source: 'upstart.erb',
         mode: '0755',
         variables: {
