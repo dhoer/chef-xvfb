@@ -3,16 +3,16 @@ when 'systemd'
   path = '/etc/systemd/system/xvfb.service'
   src = 'systemd.erb'
 when 'upstart'
-  path = '/etc/init.d/xvfb'
+  path = '/etc/init/xvfb.conf'
   src = 'upstart.erb'
-else # sysvinit
+else
   path = '/etc/init.d/xvfb'
   src = 'sysvinit.erb'
 end
 
 template path do
   source src
-  mode '0755'
+  mode '0644'
   variables(
     display: node['xvfb']['display'],
     screennum: node['xvfb']['screennum'],
