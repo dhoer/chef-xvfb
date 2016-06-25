@@ -2,10 +2,12 @@ require 'serverspec'
 
 set :backend, :exec
 
-describe service('xvfb') do
-  it { should be_enabled }
-end
+unless os[:family] == 'debian'
+  describe service('xvfb') do
+    it { should be_enabled }
+  end
 
-describe service('xvfb') do
-  it { should be_running }
+  describe service('xvfb') do
+    it { should be_running }
+  end
 end
