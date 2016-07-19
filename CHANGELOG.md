@@ -1,5 +1,9 @@
 # Xvfb Changelog
 
+## 2.1.1 2016-07-18
+
+- Fix #4 Undefined method `path_to' for Chef:Class in xvfb/libraries/default.rb
+
 ## 2.1.0 2016-06-23
 
 - Add support for systemd
