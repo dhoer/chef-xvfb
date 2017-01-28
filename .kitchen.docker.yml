@@ -87,4 +87,4 @@ platforms:
 suites:
 - name: default
   run_list:
-    - xvfb::default
+    - recipe[xvfb::default]
