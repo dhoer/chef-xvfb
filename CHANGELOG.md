@@ -1,5 +1,9 @@
 # Xvfb Changelog
 
+## 3.0.0 2017-01-27
+
+- Drop support for Chef 11
+
 ## 2.1.1 2016-07-18
 
 - Fix #4 Undefined method 'path_to' for Chef:Class in xvfb/libraries/default.rb

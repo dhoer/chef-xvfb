@@ -11,19 +11,12 @@ display hardware and no physical input devices.  It emulates a dumb framebuffer 
 
 ## Requirements
 
-- Chef 11+
+- Chef 12.14+
 
 ## Platforms
 
 - CentOS, RedHat, Fedora
 - Debian, Ubuntu
-
-## Cookbooks
-
-These cookbooks are referenced with suggests, so be sure to depend on the cookbooks that apply:
-
-- apt - Debian, Ubuntu platforms
-- yum - CentOS, RedHat, Fedora platforms
 
 ## Usage
 
