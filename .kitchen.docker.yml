@@ -15,6 +15,7 @@ verifier:
   root_path: '/opt/verifier'
   sudo: false
 
+platforms:
 - name: centos-5
   driver:
     image: centos:5
