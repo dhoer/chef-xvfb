@@ -90,4 +90,4 @@ platforms:
 suites:
 - name: default
   run_list:
-    - xvfb_test
+    - xvfb
