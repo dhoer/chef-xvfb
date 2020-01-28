@@ -15,6 +15,8 @@ addons:
 services: docker
 
 env:
+  global:
+  - CHEF_LICENSE="accept-no-persist"
   matrix:
   - INSTANCE=default-centos-5
   - INSTANCE=default-centos-6
