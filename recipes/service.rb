@@ -23,5 +23,5 @@ template path do
 end
 
 service 'xvfb' do
-  action [:enable, :start]
+  action %i[enable start]
 end
