@@ -52,7 +52,7 @@ platforms:
     pid_one_command: /bin/systemd
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https net-tools systemd -y
 
 - name: debian-10
   driver:
@@ -60,7 +60,7 @@ platforms:
     pid_one_command: /bin/systemd
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https net-tools systemd -y
 
 - name: fedora-latest
   driver:
@@ -93,7 +93,7 @@ platforms:
     pid_one_command: /bin/systemd
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https net-tools systemd -y
 
 - name: ubuntu-20.04
   driver:
@@ -101,7 +101,7 @@ platforms:
     pid_one_command: /bin/systemd
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https net-tools systemd -y
 
 suites:
 - name: default
