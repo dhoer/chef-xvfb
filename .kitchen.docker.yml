@@ -69,7 +69,7 @@ platforms:
     - RUN yum clean all
     pid_one_command: /usr/lib/systemd/systemd
     intermediate_instructions:
-      - RUN yum -y install tar yum which
+      - RUN yum -y install tar yum which libxcrypt-compat
 
 - name: ubuntu-14.04
   driver:
