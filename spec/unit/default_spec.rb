@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'xvfb::default' do
   context 'sysvinit' do
     let(:chef_run) do
-      ChefSpec::SoloRunner.new(platform: 'centos', version: '6.5') do
+      ChefSpec::SoloRunner.new(platform: 'centos', version: '6.9') do
         allow_any_instance_of(Chef::Recipe).to receive(:xvfb_systype).and_return('sysvinit')
       end.converge(described_recipe)
     end
@@ -60,7 +60,7 @@ describe 'xvfb::default' do
 
   context 'systemd' do
     let(:chef_run) do
-      ChefSpec::SoloRunner.new(platform: 'centos', version: '7.2.1511') do
+      ChefSpec::SoloRunner.new(platform: 'centos', version: '7.5.1804') do
         allow_any_instance_of(Chef::Recipe).to receive(:xvfb_systype).and_return('systemd')
       end.converge(described_recipe)
     end
