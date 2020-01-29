@@ -1,5 +1,9 @@
 # Xvfb Changelog
 
+## 3.1.0 2020-01-29
+
+- Do not write executable config files
+
 ## 3.0.0 2017-01-27
 
 - Drop support for Chef 11
