@@ -43,7 +43,7 @@ describe 'xvfb::default' do
     it 'installs upstart' do
       expect(chef_run).to create_template('/etc/init/xvfb.conf').with(
         source: 'upstart.erb',
-        mode: '0755',
+        mode: '0644',
         variables: {
           display: ':0',
           screennum: '0',
@@ -72,7 +72,7 @@ describe 'xvfb::default' do
     it 'installs systemd' do
       expect(chef_run).to create_template('/etc/systemd/system/xvfb.service').with(
         source: 'systemd.erb',
-        mode: '0755',
+        mode: '0644',
         variables: {
           display: ':0',
           screennum: '0',
