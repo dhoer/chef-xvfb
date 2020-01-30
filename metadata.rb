@@ -6,7 +6,7 @@ description 'Installs/Configures Xvfb as a Service'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 source_url 'https://github.com/dhoer/chef-xvfb'
 issues_url 'https://github.com/dhoer/chef-xvfb/issues'
-version '3.0.0'
+version '3.1.0'
 
 chef_version '>= 12.14'
 
