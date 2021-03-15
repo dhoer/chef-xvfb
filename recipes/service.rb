@@ -22,9 +22,13 @@ template path do
     dimensions: node['xvfb']['dimensions'],
     args: node['xvfb']['args']
   )
+  notifies(:reload, 'service[xvfb]')
   notifies(:restart, 'service[xvfb]')
 end
 
 service 'xvfb' do
   action %i[enable start]
+  if xvfb_systype == 'systemd'
+    reload_command 'systemctl daemon-reload'
+  end
 end
